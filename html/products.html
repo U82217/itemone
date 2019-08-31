@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>商品列表页</title>
+	<link rel="stylesheet" href="../css/cssreset.css">
+	<link rel="shortcut icon" href="../images/midea.ico">
+	<link rel="stylesheet" href="../css/public.css">
+	<link rel="stylesheet" href="../css/products.css">
+	<script src="../js/jquery-1.11.1.js"></script>
+	<script src="../js/public.js"></script>
+	<script src="../js/products.js"></script>
+</head>
+<body>
+	<!-- 头部导航 -->
+	<header class="header">
+		<h1 class="logo"></h1>
+		<ul class="header-lis">
+			<li><a href="../index.html" target="_blank" class="header-item">首页</a></li>
+			<li><a href="#" class="header-item">商家入驻</a></li>
+			<li><a href="#" class="header-item">企业采购</a></li>
+			<li><a href="houseall.html" class="header-item" target="_blank">全屋家电套购</a></li>
+			<li><a href="login.html" class="header-item" target="_blank">会员福利社</a></li>
+			<li><a href="#" class="header-item">美居</a></li>
+		</ul>
+		<div class="header-right">
+		 	<ul>
+		 		<li class="li-item li-item1">
+		 			<a href="#"><i class="icon seacher-icon1"></i></a>
+		 				<form action="#" class="search-input">
+		 					<input type="text" placeholder="每月20号美的会员狂欢日">
+		 					<i class="icon searcher-icon2"></i>
+		 				</form>
+		 		</li>
+		 		<li class="li-item">
+		 			<a href="#"><i class="icon phone-icon"></i></a>
+		 			<div class="txt hr-img">
+		 				<img src="../images/header_phone.png" alt="">
+		 			</div>
+		 		</li>
+		 		<li class="li-item">
+		 			<a href="#"><i class="icon cart-icon"></i></a>
+		 			<div class="txt cart-txt">
+		 				<p>立即<a href="login.html">登录</a>，查看购物车商品</p>
+		 			</div>
+		 		</li>
+		 		<li class="li-item">
+		 			<a href="login.html">
+		 				<i class="icon login-icons"></i>
+		 				<span class="login-txt">登录</span>
+		 			</a>
+		 			<div class="txt login-box">
+		 				<ul>
+		 					<li>
+			 					<a href="#">
+			 						<i class="login-icon login-icon1"></i>
+			 						<span>我的订单</span>
+			 					</a>
+		 					</li>
+		 					<li>
+			 					<a href="#">
+			 						<i class="login-icon login-icon2"></i>
+			 						<span>我的优惠券</span>
+			 					</a>
+		 					</li>
+		 					<li>
+			 					<a href="#">
+			 						<i class="login-icon login-icon3"></i>
+			 						<span>会员福利社</span>
+			 					</a>
+		 					</li>
+		 					<li>
+			 					<a href="#">
+			 						<i class="login-icon login-icon4"></i>
+			 						<span>我的权益</span>
+			 					</a>
+		 					</li>
+		 					<li>
+			 					<a href="#">
+			 						<i class="login-icon login-icon5"></i>
+			 						<span>我的美的</span>
+			 					</a>
+		 					</li>
+		 					<li>
+			 					<a href="#">
+			 						<i class="login-icon login-icon6"></i>
+			 						<span>账户设置</span>
+			 					</a>
+		 					</li>
+		 				</ul>
+		 			</div>
+		 		</li>
+		 	</ul>
+		</div>
+		<div class="clear"></div>
+	</header>
+	<p class="info"><a href="#">通知：1.美的商城为美的集团官方渠道，请勿相信任何刷单信息！2.新疆区域由于交通管制无法正常发货，恢复时间待定</a></p>
+	<section class="container section-wrap">
+		<!-- 产品分类 -->
+		<div class="product-title">
+			<ul class="t-lis">
+				<li>
+					<div class="all">
+						<a href="../index.html" target="_blank">首页</a>
+						<span class="icon-r"></span>
+						<a href="#">空调</a>
+						<span class="icon-r"></span>
+						<a href="#">壁挂式空调</a>
+					</div>
+					<div class="num">共22件商品</div>
+					<div class="clear"></div>
+				</li>
+				<li>
+					<div class="t-title">分类：</div>
+					<div class="t-ul">
+						<ul>
+							<li><a href="#" class="current">空调</a></li>
+							<li><a href="#">冰箱</a></li>
+							<li><a href="#">洗衣机</a></li>
+							<li><a href="#">厨房小电器</a></li>
+							<li><a href="#">厨房大电器</a></li>
+							<li><a href="#">生活家电</a></li>
+							<li><a href="#">热水/净水</a></li>
+							<li><a href="#">配件及周边</a></li>
+						</ul>
+					</div>
+					<div class="clear"></div>
+				</li>
+				<li>
+					<div class="t-title">机型：</div>
+					<div class="t-ul">
+						<ul>
+							<li><a href="#" class="current">全部空调</a></li>
+							<li><a href="#">壁挂式空调</a></li>
+							<li><a href="#">立体式空调</a></li>
+							<li><a href="#">中央空调</a></li>
+							<li><a href="#">移动空调</a></li>
+							<li><a href="#">天花机</a></li>
+						</ul>
+					</div>
+					<div class="clear"></div>
+				</li>
+				<li>
+					<div class="t-title">空调匹数：</div>
+					<div class="t-ul">
+						<ul class="ul-box">
+							<li>
+								<span class="current">全部
+								<i class="check-box1"></i></span>
+							</li>
+							<li>
+								<span>1匹<i class="check-box2"></i></span>
+							</li>
+							<li>
+								<span>1.5匹<i class="check-box2"></i></span>
+							</li>
+							<li>
+								<span>2匹<i class="check-box2"></i></span>
+							</li>
+						</ul>
+					</div>
+					<div class="clear"></div>
+				</li>
+				<li class="li-more li-more1">
+					<p>
+						<span>更多选项</span>
+						<span class="icon-b"></span>
+					</p>
+					<div class="more">
+						<ul class="t-lis1">
+							<li>
+								<div class="t-title">定速/变频：</div>
+								<div class="t-ul">
+									<ul class="ul-box">
+										<li>
+											<span class="current">全部
+											<i class="check-box1"></i>
+											</span>
+										</li>
+										<li>
+											<span>定速
+											<i class="check-box2"></i>
+											</span>
+										</li>
+										<li>
+											<span>变频
+											<i class="check-box2"></i>
+											</span>
+										</li>
+									</ul>
+								</div>
+								<div class="clear"></div>
+							</li>
+							<li>
+								<div class="t-title">冷暖类型：</div>
+								<div class="t-ul">
+									<ul class="ul-box">
+										<li>
+											<span class="current">全部<i class="check-box1"></i></span>
+										</li>
+										<li>
+											<span>冷暖型
+											<i class="check-box2"></i>
+											</span>
+										</li>
+										<li>
+											<span>单冷型
+											<i class="check-box2"></i>
+											</span>
+										</li>
+										<li>
+											<span>冷暖电辅
+											<i class="check-box2"></i>
+											</span>
+										</li>
+
+									</ul>
+								</div>
+								<div class="clear"></div>
+							</li>
+							<li>
+								<div class="t-title">能效等级：</div>
+								<div class="t-ul">
+									<ul class="ul-box">
+										<li>
+											<span class="current">全部
+											<i class="check-box1"></i>
+											</span>
+										</li>
+										<li>
+											<span>一级能效
+											<i class="check-box2"></i>
+											</span>
+										</li>
+										<li>
+											<span>二级能效
+											<i class="check-box2"></i>
+											</span>
+										</li>
+										<li>
+											<span>三级能效
+											<i class="check-box2"></i>
+											</span>
+										</li>
+
+									</ul>
+								</div>
+								<div class="clear"></div>
+							</li>
+							<li class="li-more li-more2">
+								<p>
+									<span>收起选项</span>
+									<span class="icon-t"></span>
+								</p>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+		<!-- 产品推荐价格地区 -->
+		<div class="pro-area">
+			<ul class="area-lis">
+				<li>推荐</li>
+				<li class="price">
+					<span>价格</span>
+					<i class="icon-b price-icon"></i>
+					<ul class="price-lis">
+						<li>价格从低到高</li>
+						<li>价格从低到低</li>
+					</ul>
+				</li>
+				<li>
+					<span>广东省 广州市 荔湾区</span>
+					<i class="icon-b"></i>
+				</li>
+				<div class="clear"></div>
+			</ul>
+			<ul class="area-lis1">
+				<li>
+					<span>仅看有货<i class="check-box2"></i></span>
+				</li>
+				<li>
+					<span>仅看pro精选<i class="check-box2"></i></span>
+				</li>
+				<div class="clear"></div>
+
+			</ul>
+			<div class="clear"></div>
+		</div>
+
+		<!-- 产品详情区 -->
+		<div class="pro-detail">
+			<ul class="detail-lis">
+				<li>
+					<a href="detail.html" target="_blank"><img src="../images/ph1.jpg" alt=""></a>
+					<div class="price-a">
+						<span class="price-one">￥2399.00</span>
+						<span class="price-two">￥2299.00
+							<i class="pro-icon"></i>
+						</span>
+						<span class="comment">评价 1292</span>
+					</div>
+					<a href="detail.html" class="pro-name" target="_blank" target="_blank">大1.5匹 变频空调挂机 冷暖壁挂式 智能云控  KFR-35GW/WDBN8A3@</a>
+					<div class="pro-about">智能wifi；ECO节能；百档风速；智能睡眠；</div>
+					<div class="pro-tip">
+						<span class="zy">自营</span>
+						<span class="token">用券减30</span>
+						<div class="clear"></div>
+					</div>
+					<div class="cart">
+						<span class="car">购物车
+							<i class="car-icon"></i>
+						</span>
+						<span class="compare">对比
+							<i class="compare-icon"></i>
+						</span>
+					</div>
+					<div class="top-icon">
+						<i class="pro-ticon"></i>
+						<span class="new-pro">新品</span>
+					</div>
+				</li>
+				<li>
+					<a href="detail.html" target="_blank" target="_blank"><img src="../images/ph2.jpg" alt=""></a>
+					<div class="price-a">
+						<span class="price-one">￥2099.00</span>
+						<span class="price-two">￥1999.00
+							<i class="pro-icon"></i>
+						</span>
+						<span class="comment">评价 1292</span>
+					</div>
+					<a href="detail.html" class="pro-name" target="_blank" target="_blank">
+                     大1匹 变频空调挂机 冷暖壁挂式 智能云控 KFR-26GW/WDBN8A3@ </a>
+					<div class="pro-about">智能wifi；ECO节能；百档风速；智能睡眠；</div>
+					<div class="pro-tip">
+						<span class="zy">自营</span>
+						<span class="token">用券减30</span>
+						<div class="clear"></div>
+					</div>
+					<div class="cart">
+						<span class="car">购物车
+							<i class="car-icon"></i>
+						</span>
+						<span class="compare">对比
+							<i class="compare-icon"></i>
+						</span>
+					</div>
+					<div class="top-icon">
+						<i class="pro-ticon"></i>
+						<span class="new-pro">新品</span>
+					</div>
+				</li>
+				<li>
+					<a href="detail.html" target="_blank" target="_blank"><img src="../images/ph3.jpg" alt=""></a>
+					<div class="price-a">
+						<span class="price-one">￥2099.00</span>
+						<span class="price-two">￥1999.00
+							<i class="pro-icon"></i>
+						</span>
+						<span class="comment">评价 1110</span>
+					</div>
+					<a href="detail.html" class="pro-name" target="_blank" target="_blank">
+                     空调 变频大1匹 智能冷暖挂机 KFR-26GW/WDAA3@ </a>
+					<div class="pro-about">智能控制、光敏传感、ECO节能</div>
+					<div class="pro-tip">
+						<span class="zy">自营</span>
+						<span class="token">用券减30</span>
+						<div class="clear"></div>
+					</div>
+					<div class="cart">
+						<span class="car">购物车
+							<i class="car-icon"></i>
+						</span>
+						<span class="compare">对比
+							<i class="compare-icon"></i>
+						</span>
+					</div>
+					<div class="top-icon">
+						<i class="pro-ticon"></i>
+						<span class="new-pro new-pro1">热卖</span>
+					</div>
+				</li>
+				<li>
+					<a href="detail.html" target="_blank" target="_blank"><img src="../images/ph3.jpg" alt=""></a>
+					<div class="price-a">
+						<span class="price-one">￥2399.00</span>
+						<span class="price-two">￥2299.00
+							<i class="pro-icon"></i>
+						</span>
+						<span class="comment">评价 1292</span>
+					</div>
+					<a href="detail.html" class="pro-name" target="_blank" target="_blank">大1.5匹 变频空调挂机 冷暖壁挂式 智能云控  KFR-35GW/WDBN8A3@</a>
+					<div class="pro-about">智能控制、光敏传感、ECO节能</div>
+					<div class="pro-tip">
+						<span class="zy">自营</span>
+						<span class="token">用券减30</span>
+						<div class="clear"></div>
+					</div>
+					<div class="cart">
+						<span class="car">购物车
+							<i class="car-icon"></i>
+						</span>
+						<span class="compare">对比
+							<i class="compare-icon"></i>
+						</span>
+					</div>
+					<div class="top-icon">
+						<i class="pro-ticon"></i>
+						<span class="new-pro  new-pro1">热卖</span>
+					</div>
+				</li>
+				<li>
+					<a href="detail.html" target="_blank" target="_blank"><img src="../images/k1.jpg" alt=""></a>
+					<div class="price-a">
+						<span class="price-one">￥3099.00</span>
+						<span class="comment">评价 1292</span>
+					</div>
+					<a href="detail.html" class="pro-name" target="_blank" target="_blank">
+                        大1.5P全直流变频空调 一级能效 冷暖挂机 智能操控  KFR-35GW/WXDN8A1@</a>
+					<div class="pro-about">智能wifi；ECO节能；百档风速；智能睡眠；</div>
+					<div class="pro-tip">
+						<span class="zy">自营</span>
+						<span class="token">用券减30</span>
+						<div class="clear"></div>
+					</div>
+					<div class="cart">
+						<span class="car">购物车
+							<i class="car-icon"></i>
+						</span>
+						<span class="compare">对比
+							<i class="compare-icon"></i>
+						</span>
+					</div>
+					<div class="top-icon">
+						<span class="new-pro  new-pro1">限时特惠</span>
+					</div>
+				</li>
+				<li>
+					<a href="detail.html" target="_blank" target="_blank"><img src="../images/k1.jpg" alt=""></a>
+					<div class="price-a">
+						<span class="price-one">￥2799.00</span>
+						<span class="comment">评价 1292</span>
+					</div>
+					<a href="detail.html" class="pro-name" target="_blank" target="_blank">
+                       大1P全直流变频空调 一级能效 冷暖挂机 智能操控 KFR-26GW/WXDN8A1@</a>
+					<div class="pro-about">智能wifi；ECO节能；百档风速；智能睡眠；</div>
+					<div class="pro-tip">
+						<span class="zy">自营</span>
+						<span class="token">用券减30</span>
+						<div class="clear"></div>
+					</div>
+					<div class="cart">
+						<span class="car">购物车
+							<i class="car-icon"></i>
+						</span>
+						<span class="compare">对比
+							<i class="compare-icon"></i>
+						</span>
+					</div>
+					<div class="top-icon">
+						<span class="new-pro  new-pro1">限时特惠</span>
+					</div>
+				</li>
+				<li>
+					<a href="detail.html" target="_blank" target="_blank"><img src="../images/k2.jpg" alt=""></a>
+					<div class="price-a">
+						<span class="price-one">￥1899.00</span>
+						<span class="comment">评价 970</span>
+					</div>
+					<a href="detail.html" class="pro-name" target="_blank" target="_blank">
+                    空调大1匹定速挂机 智能冷暖壁挂式 KFR-26GW/WDAD3@</a>
+					<div class="pro-about">光敏传感、智能云控、10分钟自清洁</div>
+					<div class="pro-tip">
+						<span class="zy">自营</span>
+						<div class="clear"></div>
+					</div>
+					<div class="cart">
+						<span class="car">购物车
+							<i class="car-icon"></i>
+						</span>
+						<span class="compare">对比
+							<i class="compare-icon"></i>
+						</span>
+					</div>
+					<div class="top-icon">
+						<span class="new-pro  new-pro1">限时特惠</span>
+					</div>
+				</li>
+				<li>
+					<a href="detail.html" target="_blank" target="_blank"><img src="../images/k2.jpg" alt=""></a>
+					<div class="price-a">
+						<span class="price-one">￥2099.00</span>
+						<span class="comment">评价 1000</span>
+					</div>
+					<a href="detail.html" class="pro-name" target="_blank" target="_blank">大1.5匹 变频空调挂机 冷暖壁挂式 智能云控  KFR-35GW/WDBN8A3@</a>
+					<div class="pro-about">光敏传感、智能云控、10分钟自清洁</div>
+					<div class="cart cart1">
+						<span class="car">购物车
+							<i class="car-icon"></i>
+						</span>
+						<span class="compare">对比
+							<i class="compare-icon"></i>
+						</span>
+					</div>
+				</li>
+				<li>
+					<a href="detail.html" target="_blank" target="_blank"><img src="../images/ph4.jpg" alt=""></a>
+					<div class="price-a">
+						<span class="price-one">￥2399.00</span>
+						<span class="comment">评价 1292</span>
+					</div>
+					<a href="detail.html" class="pro-name" target="_blank" target="_blank">大1.5匹 变频空调挂机 冷暖壁挂式 智能云控  KFR-35GW/WDBN8A3@</a>
+					<div class="pro-about">智能wifi；ECO节能；百档风速；智能睡眠；</div>
+					<div class="cart cart1">
+						<span class="car">购物车
+							<i class="car-icon"></i>
+						</span>
+						<span class="compare">对比
+							<i class="compare-icon"></i>
+						</span>
+					</div>
+				</li>
+				<li>
+					<a href="detail.html" target="_blank" target="_blank"><img src="../images/ph9.jpg" alt=""></a>
+					<div class="price-a">
+						<span class="price-one">￥2399.00</span>
+						<span class="comment">评价 1292</span>
+					</div>
+					<a href="detail.html" class="pro-name" target="_blank" target="_blank">大1.5匹 变频空调挂机 冷暖壁挂式 智能云控  KFR-35GW/WDBN8A3@</a>
+					<div class="pro-about">智能wifi；ECO节能；百档风速；智能睡眠；</div>
+					<div class="cart cart1">
+						<span class="car">购物车
+							<i class="car-icon"></i>
+						</span>
+						<span class="compare">对比
+							<i class="compare-icon"></i>
+						</span>
+					</div>
+				</li>
+				<li>
+					<a href="detail.html" target="_blank"><img src="../images/ph8.jpg" alt=""></a>
+					<div class="price-a">
+						<span class="price-one">￥2399.00</span>
+						<span class="comment">评价 1292</span>
+					</div>
+					<a href="detail.html" class="pro-name" target="_blank">大1.5匹 变频空调挂机 冷暖壁挂式 智能云控  KFR-35GW/WDBN8A3@</a>
+					<div class="pro-about">智能wifi；ECO节能；百档风速；智能睡眠；</div>
+					<div class="cart cart1">
+						<span class="car">购物车
+							<i class="car-icon"></i>
+						</span>
+						<span class="compare">对比
+							<i class="compare-icon"></i>
+						</span>
+					</div>
+				</li>
+				<li>
+					<a href="detail.html" target="_blank"><img src="../images/ph6.jpg" alt=""></a>
+					<div class="price-a">
+						<span class="price-one">￥2399.00</span>
+						<span class="comment">评价 1292</span>
+					</div>
+					<a href="detail.html" class="pro-name" target="_blank">大1.5匹 变频空调挂机 冷暖壁挂式 智能云控  KFR-35GW/WDBN8A3@</a>
+					<div class="pro-about">智能wifi；ECO节能；百档风速；智能睡眠；</div>
+					<div class="cart cart1">
+						<span class="car">购物车
+							<i class="car-icon"></i>
+						</span>
+						<span class="compare">对比
+							<i class="compare-icon"></i>
+						</span>
+					</div>
+				</li>
+				<li>
+					<a href="detail.html" target="_blank"><img src="../images/ph7.jpg" alt=""></a>
+					<div class="price-a">
+						<span class="price-one">￥2399.00</span>
+						<span class="comment">评价 1292</span>
+					</div>
+					<a href="detail.html" class="pro-name" target="_blank">大1.5匹 变频空调挂机 冷暖壁挂式 智能云控  KFR-35GW/WDBN8A3@</a>
+					<div class="pro-about">智能wifi；ECO节能；百档风速；智能睡眠；</div>
+					<div class="cart cart1">
+						<span class="car">购物车
+							<i class="car-icon"></i>
+						</span>
+						<span class="compare">对比
+							<i class="compare-icon"></i>
+						</span>
+					</div>
+				</li>
+				<li>
+					<a href="detail.html" target="_blank"><img src="../images/ph8.jpg" alt=""></a>
+					<div class="price-a">
+						<span class="price-one">￥2399.00</span>
+						<span class="comment">评价 1292</span>
+					</div>
+					<a href="detail.html" class="pro-name" target="_blank">大1.5匹 变频空调挂机 冷暖壁挂式 智能云控  KFR-35GW/WDBN8A3@</a>
+					<div class="pro-about">智能wifi；ECO节能；百档风速；智能睡眠；</div>
+					<div class="cart">
+						<span class="car">购物车
+							<i class="car-icon"></i>
+						</span>
+						<span class="compare">对比
+							<i class="compare-icon"></i>
+						</span>
+					</div>
+				</li>
+				<li>
+					<a href="detail.html" target="_blank"><img src="../images/ph9.jpg" alt=""></a>
+					<div class="price-a">
+						<span class="price-one">￥2399.00</span>
+						<span class="comment">评价 1292</span>
+					</div>
+					<a href="detail.html" class="pro-name" target="_blank">大1.5匹 变频空调挂机 冷暖壁挂式 智能云控  KFR-35GW/WDBN8A3@</a>
+					<div class="pro-about">智能wifi；ECO节能；百档风速；智能睡眠；</div>
+					<div class="cart">
+						<span class="car">购物车
+							<i class="car-icon"></i>
+						</span>
+						<span class="compare">对比
+							<i class="compare-icon"></i>
+						</span>
+					</div>
+				</li>
+				<li>
+					<a href="detail.html" target="_blank"><img src="../images/ph1.jpg" alt=""></a>
+					<div class="price-a">
+						<span class="price-one">￥2399.00</span>
+						<span class="comment">评价 1292</span>
+					</div>
+					<a href="detail.html" class="pro-name" target="_blank">大1.5匹 变频空调挂机 冷暖壁挂式 智能云控  KFR-35GW/WDBN8A3@</a>
+					<div class="pro-about">智能wifi；ECO节能；百档风速；智能睡眠；</div>
+					<div class="cart">
+						<span class="car">购物车
+							<i class="car-icon"></i>
+						</span>
+						<span class="compare">对比
+							<i class="compare-icon"></i>
+						</span>
+					</div>
+				</li>
+				<li>
+					<a href="detail.html" target="_blank"><img src="../images/ph10.jpg" alt=""></a>
+					<div class="price-a">
+						<span class="price-one">￥2399.00</span>
+						<span class="comment">评价 1292</span>
+					</div>
+					<a href="detail.html" class="pro-name" target="_blank">大1.5匹 变频空调挂机 冷暖壁挂式 智能云控  KFR-35GW/WDBN8A3@</a>
+					<div class="pro-about">智能wifi；ECO节能；百档风速；智能睡眠；</div>
+					<div class="cart">
+						<span class="car">购物车
+							<i class="car-icon"></i>
+						</span>
+						<span class="compare">对比
+							<i class="compare-icon"></i>
+						</span>
+					</div>
+				</li>
+				<li>
+					<a href="detail.html" target="_blank"><img src="../images/ph11.jpg" alt=""></a>
+					<div class="price-a">
+						<span class="price-one">￥7299.00</span>
+						<span class="price-two">￥6999.00
+							<i class="pro-icon"></i>
+						</span>
+						<span class="comment">评价 68</span>
+					</div>
+					<a href="detail.html" class="pro-name" target="_blank">3匹圆柱空调柜机 一级能效变频冷暖KFR-51LW/BP3DN8Y-YH200(B1)</a>
+					<div class="pro-about">智能wifi；ECO节能；百档风速；智能睡眠；</div>
+					<div class="pro-tip">
+						<span class="zy">自营</span>
+						<span class="token">用券减30</span>
+						<div class="clear"></div>
+					</div>
+					<div class="cart">
+						<span class="car">购物车
+							<i class="car-icon"></i>
+						</span>
+						<span class="compare">对比
+							<i class="compare-icon"></i>
+						</span>
+					</div>
+					<div class="top-icon">
+						<i class="pro-ticon"></i>
+						<span class="new-pro">新品</span>
+					</div>
+				</li>
+				<li>
+					<a href="detail.html" target="_blank"><img src="../images/ph12.jpg" alt=""></a>
+					<div class="price-a">
+						<span class="price-one">￥6299.00</span>
+						<span class="price-two">￥5999.00
+							<i class="pro-icon"></i>
+						</span>
+						<span class="comment">评价 69</span>
+					</div>
+					<a href="detail.html" class="pro-name" target="_blank">2匹圆柱空调柜机 一级能效变频冷暖KFR-51LW/BP3DN8Y-YH200(B1)</a>
+					<div class="pro-about">圆形艺术外观，高频速冷热，送风无级调节</div>
+					<div class="pro-tip">
+						<span class="zy">自营</span>
+						<span class="token">用券减30</span>
+						<div class="clear"></div>
+					</div>
+					<div class="cart">
+						<span class="car">购物车
+							<i class="car-icon"></i>
+						</span>
+						<span class="compare">对比
+							<i class="compare-icon"></i>
+						</span>
+					</div>
+					<div class="top-icon">
+						<i class="pro-ticon"></i>
+						<span class="new-pro">新品</span>
+					</div>
+				</li>
+				<li>
+					<a href="detail.html" target="_blank"><img src="../images/ph13.jpg" alt=""></a>
+					<div class="price-a">
+						<span class="price-one">￥2399.00</span>
+						<span class="price-two">￥2299.00</span>
+						<span class="comment">评价 1292</span>
+					</div>
+					<a href="detail.html" class="pro-name" target="_blank">大1.5匹 变频空调挂机 冷暖壁挂式 智能云控  KFR-35GW/WDBN8A3@</a>
+					<div class="pro-about">智能wifi；ECO节能；百档风速；智能睡眠；</div>
+					<div class="pro-tip">
+						<span class="zy">自营</span>
+						<span class="token">用券减30</span>
+						<div class="clear"></div>
+					</div>
+					<div class="cart">
+						<span class="car">购物车
+							<i class="car-icon"></i>
+						</span>
+						<span class="compare">对比
+							<i class="compare-icon"></i>
+						</span>
+					</div>
+					<div class="top-icon">
+						<span class="new-pro">新品</span>
+					</div>
+				</li>
+				<li>
+					<a href="detail.html" target="_blank"><img src="../images/ph14.jpg" alt=""></a>
+					<div class="price-a">
+						<span class="price-one">￥2399.00</span>
+						<span class="price-two">￥2299.00
+							<i class="pro-icon"></i>
+						</span>
+						<span class="comment">评价 1292</span>
+					</div>
+					<a href="detail.html" class="pro-name" target="_blank">大1.5匹 变频空调挂机 冷暖壁挂式 智能云控  KFR-35GW/WDBN8A3@</a>
+					<div class="pro-about">智能wifi；ECO节能；百档风速；智能睡眠；</div>
+					<div class="pro-tip">
+						<span class="zy">自营</span>
+						<span class="token">用券减30</span>
+						<div class="clear"></div>
+					</div>
+					<div class="cart">
+						<span class="car">购物车
+							<i class="car-icon"></i>
+						</span>
+						<span class="compare">对比
+							<i class="compare-icon"></i>
+						</span>
+					</div>
+					<div class="top-icon">
+						<span class="new-pro new-pro1">限时特惠</span>
+					</div>
+				</li>
+				<li>
+					<a href="detail.html" target="_blank"><img src="../images/ph15.jpg" alt=""></a>
+					<div class="price-a">
+						<span class="price-one">￥16880.00</span>
+						<span class="comment">评价 12</span>
+					</div>
+					<a href="detail.html" class="pro-name" target="_blank">【0元安装】美的 一拖二变频一级能效 多联风管机 3匹 家用中央空调 MDS-H80W(E1)            </a>
+					<div class="pro-about">【咨询送好礼】咨询后下单有精美好礼相送~详</div>
+					<div class="pro-tip">
+						<span class="zy">自营</span>
+						<span class="token">用券减30</span>
+						<div class="clear"></div>
+					</div>
+					<div class="cart">
+						<span class="car">购物车
+							<i class="car-icon"></i>
+						</span>
+						<span class="compare">对比
+							<i class="compare-icon"></i>
+						</span>
+					</div>
+					<div class="top-icon">
+						<span class="new-pro">新品</span>
+					</div>
+				</li>
+				<li>
+					<a href="detail.html" target="_blank"><img src="../images/ph16.jpg" alt=""></a>
+					<div class="price-a">
+						<span class="price-one">￥18880.00</span>
+						<span class="comment">评价 13</span>
+					</div>
+					<a href="detail.html" class="pro-name" target="_blank">【0元安装】美的 一拖三变频一级能效 多联风管机 4匹 家用中央空调 MDS-H100W(E1)</a>
+					<div class="pro-about">【咨询送好礼】咨询后下单有精美好礼相送~</div>
+					<div class="pro-tip">
+						<span class="zy">自营</span>
+						<span class="token">用券减30</span>
+						<div class="clear"></div>
+					</div>
+					<div class="cart">
+						<span class="car">购物车
+							<i class="car-icon"></i>
+						</span>
+						<span class="compare">对比
+							<i class="compare-icon"></i>
+						</span>
+					</div>
+					<div class="top-icon">
+						<span class="new-pro">新品</span>
+					</div>
+				</li>
+				<li>
+					<a href="detail.html" target="_blank"><img src="../images/ph17.jpg" alt=""></a>
+					<div class="price-a">
+						<span class="price-one">￥27880.00</span>
+						<span class="comment">评价 15</span>
+					</div>
+					<a href="detail.html" class="pro-name" target="_blank">             【0元安装】美的 一拖四变频一级能效 多联风管机 5匹 家用中央空调 MDS-H120W(E1)</a>
+					<div class="pro-about">【咨询送好礼】咨询后下单有精美好礼相送~</div>
+					<div class="pro-tip">
+						<span class="zy">自营</span>
+						<span class="token">用券减30</span>
+						<div class="clear"></div>
+					</div>
+					<div class="cart">
+						<span class="car">购物车
+							<i class="car-icon"></i>
+						</span>
+						<span class="compare">对比
+							<i class="compare-icon"></i>
+						</span>
+					</div>
+					<div class="top-icon">
+						<span class="new-pro">新品</span>
+					</div>
+				</li>
+				
+			</ul>
+			
+		</div>
+		<div class="pages">
+			<div class="page">
+				<span class="left-p">&lt;</span>
+				<span class="page-current">1</span>
+				<span>2</span>
+				<span>3</span>
+				<span class="right-p">&gt;</span>
+			</div>
+		</div>
+		
+		<!-- 底部对比栏 -->
+		<div class="compare-nav">
+			<div class="comp-title">
+				<h3>对比栏</h3>
+				<a href="#" class="hide-show">
+					<span class="nav-hide">隐藏</span>
+				</a>
+
+			</div>
+			<ul class="compare-lis">
+				<li>
+					<a href="#">
+						<img src="../images/compar.jpg" alt="">
+						<div class="img-title">
+							<p>空调 变频大1.5匹 智能冷暖 KFR-35GW/WDAA3@</p>
+							<p class="compare-price">
+								<span>￥2399.00</span>
+								<span>删除</span>
+							</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<div class="com-left">2</div>
+					<div  class="com-right">您还可以继续添加！</div>
+				</li>
+				<li>
+					<div class="com-left">3</div>
+					<div  class="com-right">您还可以继续添加！</div>
+				</li>
+				<li>
+					<div class="com-left">4</div>
+					<div class="com-right">您还可以继续添加！</div>
+				</li>
+				<li class="com-last">
+					<a href="#" class="compare-again">对比</a>
+					<a href="#">清空对比栏</a>
+				</li>
+				<div class="clear"></div>
+			</ul>
+		</div>
+	</section>
+
+	<!-- 右侧导航 -->
+	<aside class="aside-nav">
+		<ul>
+			<li class="a-nav1">
+				<a href="#">
+					<span class="aside-icon aside-icon1"></span>
+				</a>
+			</li>
+			<li class="a-nav2">
+				<a href="#">
+					<span class="aside-icon aside-icon2"></span>
+				</a>
+			</li>
+			<li class="a-nav3">
+				<a href="#">
+					<span class="aside-icon aside-icon3"></span>
+				</a>
+				<div class="wx-img">
+					<img src="../images/weixin_code.png" alt="">
+				</div>
+			</li>
+			<li class="a-nav4">
+				<a href="#">
+					<span class="aside-icon aside-icon4"></span>
+				</a>
+			</li>
+		</ul>
+	</aside>
+
+	<!-- 底部 -->
+	<footer class="footer container">
+		<ul class="footer-lis">
+			<li><a href="#">商家入驻</a></li>
+			<li><a href="#">服务条款</a></li>
+			<li><a href="#">隐私政策</a></li>
+			<li><a href="#">联系我们</a></li>
+			<li><a href="#">帮助中心</a></li>
+			<li><a href="#">服务支持</a></li>
+			<li><a href="#">东芝商城</a></li>
+			<li><a href="#">小天鹅商城</a></li>
+			<div class="clear"></div>
+		</ul>
+		<p class="footer-txt"> Copyright &copy; 1968-2019 广东美的网络科技有限公司
+			<a href="#"><img src="../images/gongan.jpg" alt=""> 粤公网安备 44060602000546号</a>
+			<a href="#"><img src="../images/gongshang.jpg" alt="" class="gonshang"> 粤工商备P06811806002512</a>
+		 </p>
+	</footer>
+</body>
+</html>

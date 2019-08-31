@@ -1,0 +1,332 @@
+body{
+	min-width: 1200px;
+	font-family:\5FAE\8F6F\96C5\9ED1;
+	font-size:12px;
+	color:#333;
+}
+a{
+	text-decoration: none;
+	color:#333;
+}
+/* 头部导航 */
+.header{
+	background-color: #0092d8;
+	height:44px;
+}
+
+.logo{
+	float: left;
+	width:120px;
+	height: 44px;
+	background-image: url('../images/sprite.png');
+	background-size: 200px 80px;
+	background-position: -80px 0px;
+}
+.header-item{
+	float: left;
+	padding:0px 30px;
+	line-height: 44px;	
+	color: #a3c3e6;
+}
+.header-item:hover{
+	color:#fff;
+}
+.header-right{
+	float: right;
+}
+.header-right .li-item{
+	float: left;
+	width:65px;
+	height:44px;
+	text-align:center;
+}
+.li-item:hover{
+	background-color:#006fa3;
+}
+.header-right .li-item>a{
+	color:#fff;
+	display: inline-block;
+	line-height: 44px;	
+}
+
+.li-item{
+	position: relative;
+}
+.search-input{
+	position: absolute;
+	right:0px;
+	top:0px;
+	width:0px;
+	overflow: hidden;
+}
+.icon{
+	width:20px;
+	height:20px;
+	position:absolute;
+	top:50%;
+	left: 50%;
+	transform:translate(-50%,-50%);
+	background-image:url('../images/index_sprite.png');
+}
+.seacher-icon1{
+	background-position: -96px -215px;
+}
+.search-input input{
+	outline:none;
+	border:none;
+	width:250px;
+	line-height:44px;
+	padding:0px 10px 0px 34px;
+	border-bottom:1px solid #e0e0e0;
+}
+.searcher-icon2{
+	background-position: -66px -213px;
+	left:10px;
+	bottom:50%;
+	transform: translateY(-50%);
+}
+.txt{
+	position:absolute;
+	top:44px;
+	display:none;
+	z-index: 1;
+}
+.phone-icon{
+	background-position: -123px -215px;
+}
+.hr-img{
+	right:-65px;
+	border: 1px solid #d6d6d6;
+}
+.cart-icon{
+	background-position: -146px -215px;
+}
+.cart-txt{
+	width:360px;
+	height:72px;
+	color:#a1a1a1;
+	line-height:72px;
+	text-align:center;
+	right:0px;
+	border:1px solid #e0e0e0;
+	background-color: #fff;
+}
+.cart-txt a{
+	color:#269bdb;
+}
+
+.header-right li:last-child{
+	position:relative;
+	width:86px;
+}
+.login-icons{
+	background-position: -37px -215px;
+	top:50%;
+	left:18px;
+	transform:translateY(-50%);	
+}
+.login-txt{
+	position:absolute;
+	right:18px;
+	top:0px;
+}
+.login-box a{
+	color:#333;
+}
+.login-box{
+	position:absolute;
+	right:0px;
+	width:291px;
+	height:293px;
+	overflow:hidden;
+	border: 1px solid #d6d6d6;
+	background-color: #fff;
+}
+.login-box li{
+	width:100%;
+	height:48px;
+	line-height:48px;
+	text-align: left;
+	padding:0px 0px 0px 20px;
+	position:relative;
+	border-bottom: 1px solid #eee;
+}
+.login-box li:last-child{
+	border-bottom: none;
+}
+.login-box li span{
+	position: absolute;
+	margin-left: 30px;
+}
+
+.login-box li:hover{
+	background-color: rgba(0,0,0,0.1);
+}
+
+.login-icon{
+	position:absolute;
+	top:50%;
+	transform:translateY(-50%);	
+	width:12px;
+	height:12px;
+	background-image:url('../images/atom_sprite.png');
+}
+.login-icon1{
+	background-position:-284px -44px;
+}
+
+.login-icon2{
+	background-position:-244px -84px;
+}
+
+.login-icon3{
+	background-position:-284px -22px;
+}
+
+.login-icon4{
+	background-position:-208px -84px;
+}
+
+.login-icon5{
+	background-position:-65px -24px;
+}
+
+.login-icon6{
+	background-position:-244px -24px;
+}
+.clear{
+	clear: both;
+}
+.info{
+	width:100%;	
+	text-align:center;
+	padding:4px 0px;
+	background-color: rgb(0, 59, 102);
+}
+ .info a{
+ 	color: #fff;
+ }
+
+.container{
+	width:1200px;
+	margin:0px auto;
+}
+
+/* 固定的右侧导航栏 */
+.aside-nav{
+	position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 2;
+    width: 62px;
+}
+.aside-nav a{
+	display:block;
+	padding:12px;
+}
+.aside-nav li{
+	background-color:#000;
+	border:1px solid #5a5959;
+}
+.aside-nav li:hover{
+	background-color:#333;
+}
+.a-nav3{
+	position:relative;
+}
+.a-nav3 .wx-img{
+	position:absolute;
+	background-color:#fff;
+	border:1px solid #e0e0e0;
+	padding:46px;
+	left:-234px;
+	bottom:0px;
+	display:none;
+}
+.wx-img::after{
+	content: '';
+	position:absolute;
+	width:0px;
+	border:10px solid red;
+	border-color:transparent;
+	border-left-color:#fff;
+	bottom:21px;
+	right:-21px;
+}
+
+.aside-icon{
+	display:inline-block;
+	position:relative;
+	width:38px;
+	height:38px;
+	background-image:url('../images/aside.png');
+}
+.aside-icon1{
+	background-position:0px 0px;
+	animation: jump 1s linear infinite;
+}
+.aside-icon2{
+	background-position:-38px 0px;
+}
+.aside-icon3{
+	background-position:-76px 0px;
+}
+.aside-icon4{
+	background-position:-118px 0px;
+}
+
+@keyframes jump{
+	0%{transform:translateY(0px);}
+	25%{transform:translateY(-4px);}
+	50%{transform:translateY(-2px);}
+	100%{transform:translateY(0px);}
+}
+
+/* 底部 */
+.footer{
+	margin:0px auto;
+}
+.footer a{
+	font-size:12px;
+}
+
+.footer-lis{
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+.footer-lis a{
+	float: left;
+	color:#333;
+	padding:15px 80px 15px 0px;
+}
+.footer-lis li:hover a{
+	color:#f30;
+}
+.footer-txt{
+	margin: 15px 0px 20px;
+    color: #999;
+    font-size: 12px;
+    line-height: 12px;
+    height: 12px;
+}
+.footer-txt a{
+	color:#999;
+}
+.footer-txt a:hover{
+	color:#f30;
+}
+.gonshang{
+	width:20px;
+	height:20px;
+}
+
+/* 其他部分相同css */
+.icon-r{
+	display:inline-block;
+	width:12px;
+	height: 15px;
+	background-image: url('../images/atom_sprite.png');
+	background-position: -30px -30px;
+	position: relative;
+	top:5px;
+}

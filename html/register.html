@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>login</title>
+	<link rel="stylesheet" href="../css/cssreset.css">
+	<link rel="shortcut icon" href="../images/midea.ico">
+	<link rel="stylesheet" href="../css/public.css">
+	<link rel="stylesheet" href="../css/login.css">
+	<script src="../js/jquery-1.11.1.js"></script>
+	<script>
+		$(function(){
+			$('.res-btn').click(function(){
+				var user=$('.user').val();
+				var pass=$('.password').val();
+				var repass=$('.repasd').val();
+
+				var re=/^1[35789]\d{9}$/;
+				var re1=/[a-zA-Z0-9_]{8,}/;
+				if (!re.test(user) || !re1.test(pass)||repass!=pass) {
+					alert('请重新输入！');
+					$('.one').html('请输入正确的手机号');
+					$('.two').html('请输入验证码');
+					$('.three').html('请输入用户密码');
+					return false;
+				}
+				window.location.href="login.html"
+				return true;
+			})
+
+			$('.reg-checkbox').click(function(event) {
+				$(this).toggleClass('reg-checkbox1');
+				$(this).children('i').toggleClass('reg-icon');
+			});
+		})
+
+
+	</script>
+</head>
+<body>
+	<header class="header">
+		<h1 class="logo"></h1>
+	</header>
+	<div class="container">
+		<div class="login">
+			<img src="../images/login.png">
+			<form action="#" class="form">
+				<div class="login-way">
+					<h2>使用手机号注册</h2>
+				</div>
+				<div class="numbers">
+					<input type="text" name="" class="user" placeholder="手机号" required="">
+					<span class="get-mess">获取验证码</span>
+					<span class="one"></span>
+				</div>
+				<input type="text" class="check-num" placeholder="短信验证码" required="">
+				<span class="two"></span>
+				<input type="password" name="" placeholder="密码" class="password" required="">
+				<span class="three"></span>
+				<input type="password" name="" placeholder="确认密码" class="repasd" required="">
+				<span class="three"></span>
+				<p class="tips">密码长度必须在8位以上，含大小写字母、数字、符号至少三种</p>
+				<div class="agreebox">
+					<span class="reg-checkbox">
+						<i></i>
+					</span>
+					<span  class="agree">同意<a href="#">《美的官方商城用户注册协议》</a></span>
+				</div>
+				<input type="button" value="注册" class="res-btn">
+				<p class="please-login"><a href="login.html">已有账号？请登录</a></p>
+			</form>
+		</div>
+	</div>
+	<footer class="container">
+		 <span>Copyright © 1968-2019 广东美的网络科技有限公司</span>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,284 @@
+.house-section,.proceed{
+	background-color: #f6f6f6;
+	overflow:hidden;
+}
+.bgs-img{
+	width: 100%;
+	height: 680px;
+	box-sizing: border-box;
+	background: url('../images/bgall.jpg') no-repeat 50%;
+}
+.house-wrap1 h2{
+    width: 100%;
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 700;
+    text-align: center;
+    color: #333;
+    padding: 110px 0 62px;
+}
+.lis-tab{
+	background-color: #fff;
+	overflow: hidden;
+}
+.house-lis1{
+	float: left;
+	width: 299px;
+	overflow: hidden;
+}
+.house-lis1 li{
+    width: 300px;
+    height: 120px;
+    border-bottom: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+    color: #666;
+    padding: 30px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.house-lis1 li:hover{
+	background: #f9f9f9;
+    border-color: #f9f9f9;
+}
+
+.house-lis1 h4{
+	font-size: 24px;
+    font-weight: 700;
+}
+
+.house-lis1 li.house-cur{
+	background: #5bc09b;
+    border-color: #5bc09b;
+    color:#fff;
+}
+.house-lis1 p{
+	color: #999;
+	font-size: 16px;
+}
+p.pcurrent{
+	color:#fff;
+}
+.house-lis2{
+	float: right;
+	width: 900px;
+	height:480px;
+	position:relative;
+}
+.house-lis2 li{
+	width: 900px;
+	height: 480px;
+	display: none;
+}
+.house-lis2 li:nth-child(1){
+	display:block;
+}
+
+/* 开通会员 */
+.house-vip{
+	width:100%;
+	height:760px;
+	margin-top:100px;
+	overflow:hidden;
+	background:url(../images/housebg1.jpg) no-repeat 50%;
+}
+.card{
+	margin-top: 100px;
+	position:relative;
+}
+.open-vip{
+	position:absolute;
+	right:0px;
+	top:77px;
+	width:600px;
+	height:229px;
+}
+.vip-title{
+	color:#fff;
+	font-size:24px;
+}
+.sub-title{
+	color:#a4b5c1;
+	font-size:16px;
+	margin-top:10px;
+}
+.open-card{
+	width:406px;
+	height:69px;
+	position:absolute;
+	right:214px;
+	top:140px;
+	text-align:center;
+	line-height:69px;
+	color:#6e562f;
+	font-size:24px;
+	font-weight: 600;
+	background:linear-gradient(270deg,#d5b376,#f4e6cb);
+	border-radius: 38px;
+	overflow:hidden;
+	cursor:pointer;
+}
+.house-price{
+	font-size:14px;
+	font-weight:100;
+}
+.open-btn del{
+	color:#756743;
+	font-size:14px;
+	text-decoration: line-through;
+}
+
+/* 中间产品区 */
+.house-product{
+	background-color:#f6f6f6;
+	height:1254px;
+
+}
+.house-wrap2{
+	width:1200px;
+	position:absolute;
+    margin-top: -95px;
+
+}
+.tabs{
+	width:1200px;
+    height: 412px;
+    background: #fff;
+    display:flex;
+    margin-bottom: 36px;
+}
+.tab-left{
+	float: left;
+	width: 24px;
+    height: 100%;
+    font-size: 24px;
+    text-align:center;
+    font-weight: 700;
+    padding: 0 35px;
+    color: #b39874;
+    background: #f1e7d3;
+    position:relative;
+}
+.tab-left::before{
+	content:'';
+	width:0px;
+	height:0px;
+	border:15px solid;
+	border-color:transparent transparent transparent #f1e7d3;
+	position:absolute;
+	right:-30px;
+	top:50%;
+	transform:translateY(-50%);
+}
+.left-title{
+	position:absolute;
+	top:50%;
+	width:24px;
+	transform:translateY(-50%);
+    line-height:26px;
+}
+.tab-rigth{
+	float: right;
+	margin-left: 30px;
+}
+.tr-ul li{
+	display:inline-block;
+	margin-top:30px;
+}
+.tr-ul img{
+	width:114px;
+	height:114px;
+}
+.tr-ul a{
+	width:160px;
+	height:160px;
+	float: left;
+	font-size:18px;
+    text-align: center;
+}
+.add-txt{
+	float: right;
+    width: 60px;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+    color:#666;
+    font-size: 20px;
+    font-weight:600;
+}
+
+/* 客厅卧室栏图片展示 */
+.imgs-wrap{
+	margin:120px auto;
+	text-align:center;
+}
+.imgs-title li{
+	display:inline-block;
+	width:220px;
+	height:60px;
+	margin-right: 20px;
+	line-height:60px;
+	text-align:center;
+	box-sizing: border-box;
+	cursor:pointer;
+	font-size:20px;
+	border-radius:3px;
+	background-color:#e5e5e5;
+}
+.imgs-title .house-cur1{
+	color:#fff;
+	background-color:#5abf98;;
+}
+
+.imgs-lis{
+	margin-top:60px;
+}
+.imgs-lis li{
+	display:none;
+}
+.imgs-lis li:nth-child(1){
+	display:block;
+}
+.product-item{
+	height:100px;
+	display:flex;
+	justify-content: space-between;
+	padding:50px 0px;
+}
+.product-item a{
+	display:inline-block;
+	width:100px;
+	height:100px;
+	text-align:center;
+}
+.product-item a p{
+	line-height:33px;
+	font-size:14px;
+	color:#000;
+}
+.icon-product{
+	width:72px;
+	height:72px;
+	display:inline-block;
+	background-image: url('../images/category_sprite.png');
+}
+.ione{
+	background-position: -26px 0px;
+}
+.itwo{
+	background-position: -206px 0px;
+}
+.ithree{
+	background-position: -387px 0px;
+}
+.ifour{
+	background-position: -570px 0px;
+}
+.ifive{
+	background-position: -750px 0px;
+}
+.isix{
+	background-position: -934px 0px;
+}
+.iseven{
+	background-position: -1113px 0px;
+}

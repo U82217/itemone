@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>login</title>
+	<link rel="stylesheet" href="../css/cssreset.css">
+	<link rel="shortcut icon" href="../images/midea.ico">
+	<link rel="stylesheet" href="../css/public.css">
+	<link rel="stylesheet" href="../css/login.css">
+	<script src="../js/jquery-1.11.1.js"></script>
+	<script>
+		$(function(){
+			$('.login-btn').click(function(){
+				var user=$('.user').val();
+				var pass=$('.password').val();
+				var re=/^1[35789]\d{9}$/;
+				var re1=/^[a-zA-Z]\d{5}$/;
+				if (!re.test(user) || !re1.test(pass)) {
+					alert('请重新输入！');
+					return false;
+				}
+				window.location.href="../index.html"
+				return true;
+			})
+		})
+	</script>
+</head>
+<body>
+	<header class="header">
+		<h1 class="logo"></h1>
+	</header>
+	<div class="container">
+		<div class="login">
+			<img src="../images/login.png">
+			<form action="#" class="form">
+				<div class="login-way">
+					<h2>使用合作号登录</h2>
+					<i class="qq"></i>
+					<i class="weixin"></i>
+				</div>
+				<h2>账号密码登录</h2>
+				<input type="text" name="" class="user" placeholder="手机号" required="">
+				<input type="password" name="" placeholder="密码" class="password" required="">
+				<input type="button" value="登录" class="login-btn">
+				<p>
+					<a href="#" class="message">短信验证登录</a>
+					<a href="register.html" class="sign-in">注册</a>
+					<a href="#" class="find-pass">找回密码</a>
+				</p>
+			</form>
+		</div>
+	</div>
+	<footer class="container">
+		 <span>Copyright © 1968-2019 广东美的网络科技有限公司</span>
+	</footer>
+</body>
+</html>
